@@ -1,0 +1,41 @@
+button {
+background-color: pink;
+shape-outside: circle(30px);
+}
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 150 px;
+background-color: beige;
+}
+
+h1 {
+font-weight: lighter;
+font-style: italic; 40px;
+letter-spacing: 2px;
+margin-bottom: 4px;
+font-size: 80px;
+color: black;
+text-decoration: underline;
+}
+
+.inputs {
+  margin: 50px 0px 80px 0px
+  width: 400px
+}
+
+.Something {
+width: inherit;
+display: flex;
+flex-direction: column;
+}
+
+input {
+  margin-top: 10px
+}
+
+.addbutton {
+margin-top: 10px
+}
