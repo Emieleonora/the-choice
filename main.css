@@ -1,6 +1,5 @@
 button {
 background-color: pink;
-shape-outside: circle(30px);
 }
 body {
 display: flex;
