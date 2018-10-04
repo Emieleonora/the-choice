@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang=eng>
+  <head>
+    <meta charset=utf-8>
+    <title>The choice</title>
+    <link href="./main.css" rel="stylesheet" type="text/css"
+  </head>
+  <body>
+    <h1>the choice between..</h1>
+    <img src="smiley.gif" alt="Smiley face" width="42" height="42">
+    <div class="inputSection">
+    <div class="inputs">
+    </div>
+      <input placeholder="something"></input>
+    </div>
+    <div class="addOption">
+      <button>one more</button>
+    </div>
+    <div class="resultSection"></div>
+    <button class="submit">give me the choice</button>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+
+          var options = []
+          var sumbit = function () {
+            $('.inputSection').hide()
+            $('.resultSection').css('display', 'flex')
+            $('input').each(function() {
+              options.push($(this).val())
+            })
+            var winner = options[Math.floor(Math.random() * options.length)]
+            console.log(winner)
+            $('.resultSection').text(winner)
+          }
+          $('.submit').click(submit)
+      })
+      </script>
+      <h3>sök</h3>
+      <input type=search></input>
+    </div>
+  </body>
+</html>
